@@ -37,7 +37,7 @@ Once the dataset is loaded, what's the shape of the data?
 * 544,898 rows x 20 columns
 * 133,744 rows x 20 columns
 
-*MY ANSWER*: 266,855 rows x 20 columns 
+*MY ANSWER*: 266,855 rows x 20 columns (see `load_green_taxi_data.py`)
 
 ## Question 2. Data Transformation
 
@@ -48,7 +48,7 @@ Upon filtering the dataset where the passenger count is greater than 0 _and_ the
 * 139,370 rows
 * 266,856 rows
 
-*MY ANSWER*: 139,370 rows 
+*MY ANSWER*: 139,370 rows (see `transform_green_taxi_data.py`)
 
 ## Question 3. Data Transformation
 
@@ -59,7 +59,7 @@ Which of the following creates a new column `lpep_pickup_date` by converting `lp
 * `data['lpep_pickup_date'] = data['lpep_pickup_datetime'].dt.date`
 * `data['lpep_pickup_date'] = data['lpep_pickup_datetime'].dt().date()`
 
-*MY ANSWER*: `data['lpep_pickup_date'] = data['lpep_pickup_datetime'].dt.date`
+*MY ANSWER*: `data['lpep_pickup_date'] = data['lpep_pickup_datetime'].dt.date` (see `transform_green_taxi_data.py`)
 
 ## Question 4. Data Transformation
 
@@ -70,7 +70,7 @@ What are the existing values of `VendorID` in the dataset?
 * 1, 2, 3, 4
 * 1
 
-*MY ANSWER*: 1 or 2
+*MY ANSWER*: 1 or 2 (see `transform_green_taxi_data.py`)
 
 ## Question 5. Data Transformation
 
@@ -81,7 +81,7 @@ How many columns need to be renamed to snake case?
 * 2
 * 4
 
-*MY ANSWER*: 4 (VendorID, RatecodeID, PULocationID, DOLocationID)
+*MY ANSWER*: 4 (VendorID, RatecodeID, PULocationID, DOLocationID) (see `transform_green_taxi_data.py`)
 
 ## Question 6. Data Exporting
 
@@ -92,7 +92,7 @@ Once exported, how many partitions (folders) are present in Google Cloud?
 * 67
 * 108
 
-*MY ANSWER*: 96 (I actually got 95 folders.)
+*MY ANSWER*: 96 (I actually got 95 folders.) (see `export_to_gcs_partitioned_parquet.py`)
 
 ## Submitting the solutions
 
