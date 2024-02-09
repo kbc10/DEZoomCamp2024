@@ -64,6 +64,7 @@ What is the best strategy to make an optimized table in Big Query if your query 
 - Cluster on by lpep_pickup_datetime and Cluster on PUlocationID
 
 *MY ANSWER*: Partition by lpep_pickup_datetime  Cluster on PUlocationID
+
 Create partioned and clustered table using this query:
 ```
 CREATE OR REPLACE TABLE project_name.ny_taxi.green_taxi_2022_data_partitoned_clustered
